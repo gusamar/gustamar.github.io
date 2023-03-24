@@ -1,0 +1,146 @@
+
+
+
+
+* {
+    color: blue (0, 0, 255);
+}
+
+:root{
+    --colorper: rgb(148, 218, 241);
+    --colorfor:  rgb(105, 199, 231);
+    --colortitulo: rgb(25, 184, 237);
+    --colorfondo: rgb(148, 218, 241);
+    --colorboton: rgb(225, 241, 247);
+}
+
+*{
+    margin: 0px;
+    /*padding: 0px;*/
+    box-sizing: border-box;  /*para ajustar contenido al contenedor*/
+}
+
+
+
+body{
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif; /* chequear si esta cargado este tipo de letra*/
+    background: var(--colorfondo);
+}
+.main-titulo{
+
+    /*border: 1px solid black;*/
+    width: 100%;
+    padding-top: 20px;
+    margin: auto;    
+    
+}
+
+
+.main-container{
+    /*border: 1px solid black;*/
+    width: 100%;
+    margin: auto;
+}
+
+p {
+    color: rgb(62, 9, 142);
+    width: auto;
+    line-height: 25px;
+    margin-top: 7px;
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+spam {
+    color:black;
+    margin-bottom: 10px;
+}
+
+
+button{
+    width: 148px;
+    height: 46px;
+    border-radius: 45px;
+    border-style: none;
+    background-color: var(--colorboton);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    padding-top: 5px;
+    margin-top: 25px;
+    transition: all .2s ease;
+}
+
+.btn-abrir-formulario:hover {
+    background: rgb(153, 153, 244);
+}
+
+.btn-abrir-formulario:active {
+    background: rgb(205, 142, 232);
+}
+
+
+h1 {
+    font-family: 'Roboto', sans-serif; /* cambio de tipografia */
+    font-size: 40px;
+    background-color: var(--colortitulo);
+    width: 100% auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;    
+}
+
+
+    
+h2 {
+    font-weight: bold;
+    padding-left: 5px;
+    color: rgb(62, 9, 142);
+    border:rgb(62, 9, 142) 1px solid
+}
+
+
+.estaesmiclase  {
+    color: rgb(62, 9, 142);
+    padding: 5px;
+ }
+
+
+article{
+    width: 100%; 
+    box-sizing: border-box;
+    padding: 48px;
+    float: left;
+ }
+
+ img{
+    width: 195px;
+    height: 195px;
+    margin-bottom: 36px;
+    
+ }
+
+ #datos-personales{
+    background-color: var(--colorper);
+    height: auto;
+    
+ }
+
+ #formacion{
+    background-color: var(--colorfor);
+    height: auto;
+ }
+
+   
+  @media (min-width: 480px) {
+    #formacion {width: 50%}
+    #datos-personales {width: 50%}
+  }
+  
+  .formulario {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path .3s ease-out;
+  }
+
+  .formulario.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }

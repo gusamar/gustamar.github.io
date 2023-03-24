@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C.V.</title>
+    
+    <link rel="stylesheet" type="text/css" href="cvestilos.css" /> 
+    <!--LINK que vincula hacia la carpeta de estilos css -->
+    <link rel="icon" type="image/x-icon" href="https://www.w3schools.com/images/favicon.ico"> <!--logo pestaña-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,100&display=swap" rel="stylesheet">
+    <!--link de bootstrap
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    -->
+
+
+    
+    <meta property="og:title" content="C.V." />
+    <meta property="og:type" content="Curriculum" />
+    <meta property="og:url" content=" http://www.example.com" /> 
+    <meta property="og:image" content="https://randomuser.me/api/portraits/men/7.jpg" /> 
+    <meta property="og:description" content="CURRICULUM VITAE de Gustavo A." />
+
+</head>
+
+<body>  
+
+
+  <div class="main-titulo">
+    <h1>Curriculum Vitae</h1>
+  </div>
+
+
+  <div class="main-container">
+    <article id="datos-personales">
+      <img src="https://randomuser.me/api/portraits/men/7.jpg"
+      alt="imagen de gustavo">
+      <h2>Ing. Agr. Gustavo Ramses</h2>
+       
+
+      <ul>
+        <li class="estaesmiclase">
+          Dirección: 
+          Piaggio 900, Rosario, Santa Fe. 
+        </li>                                   
+        <li class="estaesmiclase">Teléfono Movil: 
+          0341-155505555</li>
+        <li class="estaesmiclase">Telefono Fijo: 0341-4537788</li>
+        <li class="estaesmiclase">Email: ing.ramses-23@gmail.com</li>
+      </ul>
+    
+      <div class="contenedor-btn">    
+        <button class="btn-abrir-formulario" id="btn-abrir-formulario">Consulta</button> <!--el id era botondatospersonales-->
+      </div>
+      
+<!--  el siguiente bloque es el formulario-->
+      <div class="formu" id="formu">
+        <p>Envíe su consulta se la respondere a la brevedad</p><br>
+        <form action="" id="formulario" class="formulario">   <!--/action_page.php-->
+          <label for="fname">Nombre:</label><br>
+          <input type="text" id="fname" name="fname" value="." maxlength="16"><br><br>
+          <label for="lname">Telefono:</label><br>
+          <input type="text" id="tel" name="tel" value="." maxlength="16"><br><br>
+          <label for="lname">Email:</label><br>
+          <input type="email" id="correo" name="correo" value="." maxlength="16"><br><br>
+          <label for="Textarea1">Consulta:</label><br>
+          <textarea class="form-control" id="Textarea1" rows="3"></textarea><br><br>
+          <input type="submit" value="Enviar"> 
+        </form> 
+
+      </div>
+
+    </article>  
+    
+
+    <article id="formacion">
+      <h2>Formación</h2>
+        <p>Ingeniero Agrónomo.</p>
+        <spam>Universidad Nacional de Rosario, Facultad de Cs. Agrarias, Zavalla.     2012</spam>
+          
+        <p>Agrónomo General.</p>
+        <spam>Escuela Agrotécnica Lib. Gral. San Martín, UNR. Casilda, Santa Fe.     1998</spam>
+          
+        <p>Posgrado: Alta Dirección en  Agronegocios.</p> 
+        <spam>Universidad de Buenos Aires, Facultad de Cs. Agrarias, Buenos Aires.  2013</spam>
+          
+        <p>Perito Clasificador de Cereales y Oleaginosos.</p>
+        <spam>Escuela de Recibidores de Granos, Rosario, Santa Fe.                            2016 </spam>
+      <h2>Experiencias</h2>
+          
+        <p>Ingeniero Agrónomo.                          Abril 2013 a la actualidad</p>
+        <spam>Municipalidad de Rosario, Secretaria de Economía Social.</spam>
+        <ul>	
+          <li class="estaesmiclase">Brindando capacitación y asesoramiento en Huertas  agroecológicas comunitarias.</li>
+          <li class="estaesmiclase">Entrevista y registro informático de emprendedores.</li>
+          <li class="estaesmiclase">Trabajo administrativo con registros informáticos.</li>
+          <li class="estaesmiclase">Articulación con Instituciones y otras Secretarias Municipales.</li>
+          <li class="estaesmiclase">Organización de ferias municipales y cursos de capacitación con gestión de becas a los participantes.</li>
+          <li class="estaesmiclase">Coordinación de jóvenes en el Programa Nueva Oportunidad.</li>
+          	 
+        </ul>
+      <h2>Aptitudes</h2>
+        <ul>
+          <li class="estaesmiclase">Idioma: Español, Ingles intermedio.</li>
+          <li class="estaesmiclase">Computación: Office, LibreOffice, Registros Informáticos Sociales, Programa de información geográfica (QGIS).</li>
+          <li class="estaesmiclase">Flexibilidad de horarios.</li>
+          <li class="estaesmiclase">Movilidad Propia.</li>
+        </ul> 
+      <h2>Publicaciones</h2>
+        <ul>
+          <li class="estaesmiclase">“Consejos prácticos para manejo de herramientas agricolas”                         2018 </li>
+        </ul>
+       
+      <h2>Cursos</h2>
+        <ul>
+          <li class="estaesmiclase">QGIS Integral, Análisis de datos espaciales.(Centro Redes)                               2021</li>
+          <li class="estaesmiclase">Actualización en Labanzas               2022</li>
+        </ul>    
+      
+    </article>
+
+
+  </div>
+
+<script src="cvfin.js"></script> 
+
+</body>
+</html>
